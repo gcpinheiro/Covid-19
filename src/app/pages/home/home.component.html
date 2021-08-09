@@ -13,8 +13,17 @@
         </div>
     </header>
     <div class="options" fxLayout="row" fxLayoutAlign="space-around center">
-        <div class="boxs" fxLayout="row" fxLayoutAlign="space-around center">
-            <div class="box vacinne" fxLayout="row" fxLayoutAlign="center center">Vacinômetro</div>
+        <div class="boxs" fxLayout="row" fxLayoutAlign="space-around center" 
+            fxFlex="30%"
+            fxFlex.xs="80%"
+            
+        >
+            <div class="box vacinne" 
+            fxLayout="row" fxLayoutAlign="center center"
+             
+            [ngStyle.xs]="{'font-size.px': 10, color: 'blue'}"
+
+            >Vacinômetro</div>
             <div class="box orientation" id="div-orientation" fxLayout="row" fxLayoutAlign="center center" (click)="redirectOrientation()"> Orientações</div>
            
         </div>
@@ -40,57 +49,6 @@
                 <td>{{response.deaths}}</td>
                 <td>{{response.suspects}}</td>
             </tr>
-
-            <!-- 
-            <tr class="odd">
-                <td>CE</td>
-                <td>340.432</td>
-                <td>25.413</td>
-                <td>3.432</td>
-            </tr>
-            <tr class="even">
-                <td>RN</td>
-                <td>543.532</td>
-                <td>29.876</td>
-                <td>3.754</td>
-            </tr>
-            <tr class="odd">
-                <td>RN</td>
-                <td>543.532</td>
-                <td>29.876</td>
-                <td>3.754</td>
-            </tr>
-            <tr class="even">
-                <td>RN</td>
-                <td>543.532</td>
-                <td>29.876</td>
-                <td>3.754</td>
-            </tr>
-            <tr class="odd">
-                <td>CE</td>
-                <td>340.432</td>
-                <td>25.413</td>
-                <td>3.432</td>
-            </tr>
-            <tr class="even">
-                <td>RN</td>
-                <td>543.532</td>
-                <td>29.876</td>
-                <td>3.754</td>
-            </tr>
-            <tr class="odd">
-                <td>RN</td>
-                <td>543.532</td>
-                <td>29.876</td>
-                <td>3.754</td>
-            </tr>
-            <tr class="even">
-                <td>RN</td>
-                <td>543.532</td>
-                <td>29.876</td>
-                <td>3.754</td>
-            </tr>
-            -->
         </table>
     </section>
 </div>
